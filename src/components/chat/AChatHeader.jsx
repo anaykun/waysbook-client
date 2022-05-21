@@ -2,6 +2,8 @@ import React from "react";
 import default_profile from "../../images/blank-profile.png";
 
 export default function AChatHeader({ online, contact }) {
+  const url =
+    "https://res.cloudinary.com/helloholmes13/image/upload/v1650993510/";
   return (
     <>
       <>
@@ -12,7 +14,7 @@ export default function AChatHeader({ online, contact }) {
               style={{ height: "50px", width: "50px" }}
             >
               <img
-                src={contact.profile?.avatar || default_profile}
+                src={`${url}${contact.profile?.avatar}` || default_profile}
                 alt=""
                 className="w-100 h-100"
               />

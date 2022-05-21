@@ -3,6 +3,7 @@ import default_profile from "../../images/blank-profile.png";
 
 export default function AHeader({ item, online, onClickContact }) {
   console.log("profile", item);
+    const url = "https://res.cloudinary.com/helloholmes13/image/upload/v1650993510/"
   return (
     <div className="container-fluid w-100  " style={{ background: "#DFDFDF" }}>
       <div>
@@ -17,7 +18,7 @@ export default function AHeader({ item, online, onClickContact }) {
                 style={{ height: "50px", width: "50px" }}
               >
                 <img
-                  src={item.profile?.avatar || default_profile}
+                  src={`${url}${item.profile?.avatar}`|| default_profile}
                   alt=""
                   className="w-100 h-100"
                 />
