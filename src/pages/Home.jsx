@@ -51,7 +51,7 @@ export default function Home() {
         await API.post(
           "/cart",
           {
-            idBook: id,
+            idProduct: id,
           },
           config
         ).then((res) => {
