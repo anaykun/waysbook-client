@@ -84,7 +84,9 @@ export default function DetailBook() {
           </div>
           <div className="d-flex justify-content-end">
             {purse ? (
-              <button className="btn btn-dark ">Download</button>
+              <a href={data.bookPdf} className="btn btn-dark ">
+                Download
+              </a>
             ) : (
               <button className="btn btn-dark " onClick={handleBuy}>
                 Add Cart{" "}

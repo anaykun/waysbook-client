@@ -17,9 +17,12 @@ export default function CardBuy({ item }) {
           <div className="m-0">
             <p className="fs-4 lh-1 my-2 fw-bold">{item.book.title}</p>
             <p className="fw-lighter my-1">By {item.book.author}</p>
-            <Link to="#" className="nav-link bg-dark text-center text-light">
+            <a
+              href={item.book.bookPdf}
+              className="nav-link bg-dark text-center text-light"
+            >
               Download
-            </Link>
+            </a>
           </div>
         </div>
       </div>
